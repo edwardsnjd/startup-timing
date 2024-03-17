@@ -4,8 +4,7 @@ startup-timing
 A bunch of hello world programs to compare the startup time of various programming languages.
 
 ```bash
-./build
-./run
+make
 ```
 
 Results

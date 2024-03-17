@@ -1,6 +1,0 @@
-#! /usr/bin/env bash
-
-(cd c/ ; gcc -o foo foo.c )
-(cd javaclass/ ; javac Foo.java )
-(cd kotlinclass/ ; kotlinc Foo.kt )
-(cd rust/ ; rustc foo.rs )
