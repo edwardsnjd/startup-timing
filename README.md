@@ -3,6 +3,32 @@ startup-timing
 
 A bunch of hello world programs to compare the startup time of various programming languages.
 
+Usage
+-----
+
+Ensure you have the dependencies installed and available on your `PATH`:
+
+- Tooling
+  - `make`
+  - `hyperfine`
+- Shells
+    - `bash`, `zsh`, and `nu` (nushell)
+- Interpreters
+  - `lua`
+  - `node`
+  - `python3`
+  - `ruby`
+- Compilers
+  - `gcc`
+  - `rustc`
+  - `javac`
+  - `kotlinc`
+- JVM
+  - `java`
+  - `kotlin`
+
+Then compile and run the benchmarks:
+
 ```bash
 make
 ```
