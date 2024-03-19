@@ -30,6 +30,7 @@ run:
 		"kotlin -cp kotlinclass/ FooKt" \
 		"lua lua/foo.lua" \
 		"node nodejs/foo.js" \
+		"nvim -l lua/foo.lua" \
 		"nu nushell/foo.nu" \
 		"python3 python/foo.py" \
 		"ruby ruby/foo.rb" \
