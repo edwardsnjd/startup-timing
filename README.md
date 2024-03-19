@@ -1,7 +1,7 @@
 startup-timing
 ==============
 
-A bunch of hello world programs to compare the startup time of various programming languages.
+A bunch of hello world programs to compare the startup time of various programming languages and means of executing them.
 
 Usage
 -----
