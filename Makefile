@@ -1,5 +1,5 @@
 .PHONY: all
-all: clean build run
+all: build run
 
 .PHONY: clean
 clean:
@@ -21,6 +21,9 @@ run:
 		--sort="mean-time" \
 		"bash bash/foo" \
 		"c/foo" \
+		"emacs --batch --script elisp/foo.el" \
+		"guile guile/foo.scm" \
+		"clojure -M clojure/foo.clj" \
 		"java -cp javaclass/ Foo" \
 		"java java/Foo.java" \
 		"kotlin kotlin/Foo.main.kts" \
