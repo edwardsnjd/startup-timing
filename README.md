@@ -21,11 +21,13 @@ Ensure you have the dependencies installed and available on your `PATH`:
   - `emacs`
   - `nvim`
   - `guile`
+  - `go`
 - Compilers
   - `gcc`
   - `rustc`
   - `javac`
   - `kotlinc`
+  - `go`
 - JVM
   - `java`
   - `clojure`

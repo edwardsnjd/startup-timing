@@ -10,6 +10,7 @@ build:
 	(cd c/ ; gcc -o foo foo.c )
 	(cd javaclass/ ; javac Foo.java )
 	(cd kotlinclass/ ; kotlinc Foo.kt )
+	(cd goclass/ ; go build foo.go )
 	(cd rust/ ; rustc foo.rs )
 
 .PHONY: run
@@ -36,3 +37,5 @@ run:
 		"ruby ruby/foo.rb" \
 		"rust/foo" \
 		"zsh zsh/foo" \
+		"go run go/foo.go" \
+		"goclass/foo" \
