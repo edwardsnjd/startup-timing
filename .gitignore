@@ -3,3 +3,4 @@ javaclass/Foo.class
 kotlinclass/FooKt.class
 kotlinclass/META-INF/
 rust/foo
+goclass/foo
