@@ -1,5 +1,8 @@
 c/foo
 goclass/foo
+haskell/foo
+haskell/foo.hi
+haskell/foo.o
 javaclass/Foo.class
 kotlinclass/FooKt.class
 kotlinclass/META-INF/

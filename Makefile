@@ -8,6 +8,7 @@ clean:
 .PHONY: build
 build:
 	(cd c/ ; gcc -o foo foo.c )
+	(cd haskell/ ; ghc foo.hs )
 	(cd javaclass/ ; javac Foo.java )
 	(cd kotlinclass/ ; kotlinc Foo.kt )
 	(cd goclass/ ; go build foo.go )
@@ -27,6 +28,7 @@ run:
 		"go run go/foo.go" \
 		"goclass/foo" \
 		"guile guile/foo.scm" \
+		"haskell/foo" \
 		"java -cp javaclass/ Foo" \
 		"java java/Foo.java" \
 		"kotlin -cp kotlinclass/ FooKt" \
