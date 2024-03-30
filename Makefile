@@ -12,6 +12,7 @@ build:
 	(cd haskell/ ; ghc foo.hs )
 	(cd javaclass/ ; javac Foo.java )
 	(cd kotlinclass/ ; kotlinc Foo.kt )
+	(cd ocaml/ ; ocamlc -o foo foo.ml )
 	(cd rust/ ; rustc foo.rs )
 
 .PHONY: run
@@ -37,6 +38,8 @@ run:
 		"node nodejs/foo.js" \
 		"nu nushell/foo.nu" \
 		"nvim -l lua/foo.lua" \
+		"ocaml/foo" \
+		"ocaml ocaml/foo.ml" \
 		"python3 python/foo.py" \
 		"ruby ruby/foo.rb" \
 		"rust/foo" \

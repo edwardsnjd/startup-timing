@@ -6,4 +6,7 @@ haskell/foo.o
 javaclass/Foo.class
 kotlinclass/FooKt.class
 kotlinclass/META-INF/
+ocaml/foo
+ocaml/foo.cmi
+ocaml/foo.cmo
 rust/foo
