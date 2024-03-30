@@ -1,11 +1,11 @@
 c/foo
-goclass/foo
+go/foo
 haskell/foo
 haskell/foo.hi
 haskell/foo.o
-javaclass/Foo.class
-kotlinclass/FooKt.class
-kotlinclass/META-INF/
+java/Foo.class
+kotlin/FooKt.class
+kotlin/META-INF/
 ocaml/foo
 ocaml/foo.cmi
 ocaml/foo.cmo

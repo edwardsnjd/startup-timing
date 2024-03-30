@@ -8,10 +8,10 @@ clean:
 .PHONY: build
 build:
 	(cd c/ ; gcc -o foo foo.c )
-	(cd goclass/ ; go build foo.go )
+	(cd go/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
-	(cd javaclass/ ; javac Foo.java )
-	(cd kotlinclass/ ; kotlinc Foo.kt )
+	(cd java/ ; javac Foo.java )
+	(cd kotlin/ ; kotlinc Foo.kt )
 	(cd ocaml/ ; ocamlc -o foo foo.ml )
 	(cd rust/ ; rustc foo.rs )
 
@@ -27,12 +27,12 @@ run:
 		"clojure -M clojure/foo.clj" \
 		"emacs --batch --script elisp/foo.el" \
 		"go run go/foo.go" \
-		"goclass/foo" \
+		"go/foo" \
 		"guile guile/foo.scm" \
 		"haskell/foo" \
-		"java -cp javaclass/ Foo" \
+		"java -cp java/ Foo" \
 		"java java/Foo.java" \
-		"kotlin -cp kotlinclass/ FooKt" \
+		"kotlin -cp kotlin/ FooKt" \
 		"kotlin kotlin/Foo.main.kts" \
 		"lua lua/foo.lua" \
 		"node nodejs/foo.js" \
