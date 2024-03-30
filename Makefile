@@ -22,20 +22,20 @@ run:
 		--sort="mean-time" \
 		"bash bash/foo" \
 		"c/foo" \
-		"emacs --batch --script elisp/foo.el" \
-		"guile guile/foo.scm" \
 		"clojure -M clojure/foo.clj" \
+		"emacs --batch --script elisp/foo.el" \
+		"go run go/foo.go" \
+		"goclass/foo" \
+		"guile guile/foo.scm" \
 		"java -cp javaclass/ Foo" \
 		"java java/Foo.java" \
-		"kotlin kotlin/Foo.main.kts" \
 		"kotlin -cp kotlinclass/ FooKt" \
+		"kotlin kotlin/Foo.main.kts" \
 		"lua lua/foo.lua" \
 		"node nodejs/foo.js" \
-		"nvim -l lua/foo.lua" \
 		"nu nushell/foo.nu" \
+		"nvim -l lua/foo.lua" \
 		"python3 python/foo.py" \
 		"ruby ruby/foo.rb" \
 		"rust/foo" \
 		"zsh zsh/foo" \
-		"go run go/foo.go" \
-		"goclass/foo" \
