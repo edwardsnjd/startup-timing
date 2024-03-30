@@ -14,20 +14,23 @@ Ensure you have the dependencies installed and available on your `PATH`:
 - Shells
     - `bash`, `zsh`, and `nu` (nushell)
 - Interpreters
+  - `emacs`
+  - `go`
+  - `guile`
   - `lua`
   - `node`
+  - `nvim`
+  - `ocaml`
   - `python3`
   - `ruby`
-  - `emacs`
-  - `nvim`
-  - `guile`
-  - `go`
 - Compilers
   - `gcc`
-  - `rustc`
+  - `ghc`
+  - `go`
   - `javac`
   - `kotlinc`
-  - `go`
+  - `ocamlc`
+  - `rustc`
 - JVM
   - `java`
   - `clojure`
