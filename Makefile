@@ -8,10 +8,10 @@ clean:
 .PHONY: build
 build:
 	(cd c/ ; gcc -o foo foo.c )
+	(cd goclass/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
 	(cd javaclass/ ; javac Foo.java )
 	(cd kotlinclass/ ; kotlinc Foo.kt )
-	(cd goclass/ ; go build foo.go )
 	(cd rust/ ; rustc foo.rs )
 
 .PHONY: run
