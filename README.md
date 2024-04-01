@@ -3,6 +3,10 @@ startup-timing
 
 A bunch of hello world programs to compare the startup time of various programming languages and means of executing them.
 
+All programs do the equivalent of "print 'hello world' to stdout, then exit".
+
+The results below are the total time to start, run, and exit.
+
 Results
 -------
 
