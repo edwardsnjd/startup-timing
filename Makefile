@@ -8,6 +8,7 @@ clean:
 .PHONY: build
 build:
 	(cd c/ ; gcc -o foo foo.c )
+	(cd cpp/ ; g++ -o foo foo.cpp )
 	(cd go/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
 	(cd java/ ; javac Foo.java )
@@ -25,6 +26,7 @@ run:
 		"bash bash/foo" \
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \
+		"cpp/foo" \
 		"emacs --batch --script elisp/foo.el" \
 		"escript erlang/foo.erl" \
 		"go run go/foo.go" \
