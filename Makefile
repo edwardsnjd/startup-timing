@@ -26,6 +26,7 @@ run:
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \
 		"emacs --batch --script elisp/foo.el" \
+		"escript erlang/foo.erl" \
 		"go run go/foo.go" \
 		"go/foo" \
 		"guile guile/foo.scm" \
