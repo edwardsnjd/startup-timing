@@ -1,15 +1,3 @@
-startup-timing
-==============
-
-A bunch of hello world programs to compare the startup time of various programming languages and means of executing them.
-
-All programs do the equivalent of "print 'hello world' to stdout, then exit".
-
-The results below are the total time to start, run, and exit.
-
-Results
--------
-
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
 | `c/foo` | 2.2 ± 0.3 | 1.8 | 3.8 | 1.00 |
@@ -38,46 +26,3 @@ Results
 | `java java/Foo.java` | 560.8 ± 41.0 | 521.4 | 654.2 | 260.33 ± 45.39 |
 | `clojure -M clojure/foo.clj` | 772.2 ± 7.0 | 759.4 | 786.0 | 358.44 ± 56.83 |
 | `kotlin kotlin/Foo.main.kts` | 1401.7 ± 32.1 | 1356.9 | 1457.6 | 650.62 ± 104.06 |
-
-Running
--------
-
-Ensure you have the dependencies installed and available on your `PATH`:
-
-- Tooling
-  - `make`
-  - `hyperfine`
-- Shells
-    - `bash`, `zsh`, and `nu` (nushell)
-- Interpreters
-  - `emacs`
-  - `escript`
-  - `go`
-  - `guile`
-  - `lua`
-  - `node`
-  - `nvim`
-  - `ocaml`
-  - `python3`
-  - `ruby`
-  - `swift`
-- Compilers
-  - `g++`
-  - `gcc`
-  - `ghc`
-  - `go`
-  - `javac`
-  - `kotlinc`
-  - `ocamlc`
-  - `rustc`
-  - `swiftc`
-- JVM
-  - `java`
-  - `clojure`
-  - `kotlin`
-
-Then compile and run the benchmarks:
-
-```bash
-make
-```

@@ -15,6 +15,7 @@ build:
 	(cd kotlin/ ; kotlinc Foo.kt )
 	(cd ocaml/ ; ocamlc -o foo foo.ml )
 	(cd rust/ ; rustc foo.rs )
+	(cd swift/ ; swiftc -o foo foo.swift )
 
 .PHONY: run
 run:
@@ -46,4 +47,6 @@ run:
 		"python3 python/foo.py" \
 		"ruby ruby/foo.rb" \
 		"rust/foo" \
+		"swift swift/foo.swift" \
+		"swift/foo" \
 		"zsh zsh/foo" \
