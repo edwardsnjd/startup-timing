@@ -9,6 +9,7 @@ clean:
 build:
 	(cd c/ ; gcc -o foo foo.c )
 	(cd cpp/ ; g++ -o foo foo.cpp )
+	(cd csharp/ ; dotnet build )
 	(cd fsharp/ ; dotnet build )
 	(cd go/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
@@ -29,6 +30,7 @@ run:
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \
 		"cpp/foo" \
+		"dotnet csharp/bin/Debug/net8.0/csharp.dll" \
 		"dotnet fsharp/bin/Debug/net8.0/fsharp.dll" \
 		"dotnet fsi fsharpx/Foo.fsx" \
 		"emacs --batch --script elisp/foo.el" \
