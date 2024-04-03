@@ -65,6 +65,7 @@ Ensure you have the dependencies installed and available on your `PATH`:
   - `ruby`
   - `swift`
 - Compilers
+  - `cobc`
   - `dotnet`
   - `g++`
   - `gcc`

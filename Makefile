@@ -10,6 +10,7 @@ clean:
 .PHONY: build
 build:
 	(cd c/ ; gcc -o foo foo.c )
+	(cd cobol/ ; cobc -x foo.cb )
 	(cd cpp/ ; g++ -o foo foo.cpp )
 	(cd csharp/ ; dotnet build )
 	(cd fsharp/ ; dotnet build )
@@ -36,6 +37,7 @@ summary.md:
 		"bash bash/foo" \
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \
+		"cobol/foo" \
 		"cpp/foo" \
 		"dotnet csharp/bin/Debug/net8.0/csharp.dll" \
 		"dotnet fsharp/bin/Debug/net8.0/fsharp.dll" \
