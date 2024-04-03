@@ -60,6 +60,7 @@ summary.md:
 		"nvim -l lua/foo.lua" \
 		"ocaml/foo" \
 		"ocaml ocaml/foo.ml" \
+		"perl perl/foo.pl" \
 		"python3 python/foo.py" \
 		"ruby ruby/foo.rb" \
 		"rust/foo" \
