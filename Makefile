@@ -9,6 +9,7 @@ clean:
 build:
 	(cd c/ ; gcc -o foo foo.c )
 	(cd cpp/ ; g++ -o foo foo.cpp )
+	(cd fsharp/ ; dotnet build )
 	(cd go/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
 	(cd java/ ; javac Foo.java )
@@ -28,6 +29,8 @@ run:
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \
 		"cpp/foo" \
+		"dotnet fsharp/bin/Debug/net8.0/fsharp.dll" \
+		"dotnet fsi fsharpx/Foo.fsx" \
 		"emacs --batch --script elisp/foo.el" \
 		"escript erlang/foo.erl" \
 		"go run go/foo.go" \

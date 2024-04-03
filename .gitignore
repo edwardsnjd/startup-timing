@@ -12,3 +12,5 @@ ocaml/foo.cmi
 ocaml/foo.cmo
 rust/foo
 swift/foo
+fsharp/obj
+fsharp/bin
