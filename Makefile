@@ -1,3 +1,5 @@
+.ONESHELL:
+
 .PHONY: all
 all: build run
 
@@ -20,7 +22,12 @@ build:
 	(cd swift/ ; swiftc -o foo foo.swift )
 
 .PHONY: run
-run:
+run: summary.md README.md
+	rm summary.md
+
+# Not actually phony, but pretend so we get fresh results
+.PHONY: summary.md
+summary.md:
 	hyperfine \
 		--warmup 2 \
 		--shell=none \
@@ -55,3 +62,14 @@ run:
 		"swift swift/foo.swift" \
 		"swift/foo" \
 		"zsh zsh/foo" \
+
+README.md: summary.md
+	make ed-script | ed README.md
+
+# HACK: Phony target to avoid additional files
+.PHONY: ed-script
+ed-script:
+	@echo /^Results/+3,/^Running/-2 d
+	@echo /^Results/+2 r summary.md
+	@echo w
+	@echo q
