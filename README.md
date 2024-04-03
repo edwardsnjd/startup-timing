@@ -12,35 +12,37 @@ Results
 
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `c/foo` | 2.2 ± 0.4 | 1.8 | 4.2 | 1.00 |
-| `cpp/foo` | 2.3 ± 0.4 | 1.9 | 5.6 | 1.05 ± 0.27 |
-| `swift/foo` | 2.4 ± 0.4 | 2.0 | 5.0 | 1.13 ± 0.29 |
-| `rust/foo` | 2.6 ± 0.4 | 2.2 | 5.5 | 1.21 ± 0.30 |
-| `lua lua/foo.lua` | 3.2 ± 0.5 | 2.6 | 5.8 | 1.47 ± 0.36 |
-| `go/foo` | 3.8 ± 0.6 | 3.1 | 7.1 | 1.74 ± 0.42 |
-| `ocaml/foo` | 4.3 ± 0.6 | 3.6 | 8.2 | 2.01 ± 0.46 |
-| `bash bash/foo` | 4.7 ± 0.7 | 4.0 | 8.7 | 2.20 ± 0.52 |
-| `zsh zsh/foo` | 7.0 ± 1.1 | 5.8 | 21.2 | 3.24 ± 0.79 |
-| `nvim -l lua/foo.lua` | 14.1 ± 1.4 | 12.1 | 20.1 | 6.54 ± 1.36 |
-| `guile guile/foo.scm` | 19.7 ± 1.5 | 17.2 | 25.3 | 9.14 ± 1.81 |
-| `haskell/foo` | 20.6 ± 2.1 | 15.9 | 26.6 | 9.56 ± 2.02 |
-| `ocaml ocaml/foo.ml` | 28.6 ± 1.6 | 25.8 | 33.9 | 13.25 ± 2.55 |
-| `emacs --batch --script elisp/foo.el` | 33.6 ± 1.7 | 30.3 | 39.3 | 15.57 ± 2.97 |
-| `python3 python/foo.py` | 38.5 ± 2.1 | 33.6 | 43.7 | 17.86 ± 3.43 |
-| `nu nushell/foo.nu` | 49.4 ± 2.3 | 44.1 | 55.9 | 22.90 ± 4.34 |
-| `dotnet csharp/bin/Debug/net8.0/csharp.dll` | 52.8 ± 2.5 | 48.8 | 58.6 | 24.48 ± 4.64 |
-| `node nodejs/foo.js` | 55.0 ± 1.9 | 51.9 | 59.5 | 25.51 ± 4.77 |
-| `ruby ruby/foo.rb` | 66.2 ± 2.5 | 61.6 | 71.9 | 30.69 ± 5.76 |
-| `dotnet fsharp/bin/Debug/net8.0/fsharp.dll` | 67.0 ± 2.3 | 62.6 | 71.8 | 31.07 ± 5.81 |
-| `java -cp java/ Foo` | 72.0 ± 2.2 | 68.2 | 77.2 | 33.36 ± 6.22 |
-| `escript erlang/foo.erl` | 158.4 ± 2.4 | 154.3 | 162.2 | 73.40 ± 13.53 |
-| `swift swift/foo.swift` | 176.5 ± 4.7 | 169.9 | 189.2 | 81.81 ± 15.19 |
-| `kotlin -cp kotlin/ FooKt` | 236.0 ± 3.4 | 232.4 | 242.8 | 109.36 ± 20.16 |
-| `go run go/foo.go` | 306.7 ± 3.6 | 301.4 | 313.0 | 142.15 ± 26.18 |
-| `java java/Foo.java` | 533.8 ± 13.0 | 522.3 | 565.5 | 247.40 ± 45.87 |
-| `clojure -M clojure/foo.clj` | 774.6 ± 9.0 | 762.5 | 796.9 | 358.98 ± 66.10 |
-| `dotnet fsi fsharpx/Foo.fsx` | 1344.4 ± 16.1 | 1321.2 | 1371.3 | 623.03 ± 114.74 |
-| `kotlin kotlin/Foo.main.kts` | 1402.0 ± 41.4 | 1359.8 | 1506.6 | 649.72 ± 120.94 |
+| `c/foo` | 2.1 ± 0.2 | 1.8 | 4.5 | 1.00 |
+| `cpp/foo` | 2.1 ± 0.2 | 1.9 | 3.0 | 1.04 ± 0.13 |
+| `swift/foo` | 2.3 ± 0.2 | 2.0 | 3.9 | 1.14 ± 0.14 |
+| `rust/foo` | 2.6 ± 0.2 | 2.2 | 4.2 | 1.25 ± 0.16 |
+| `lua lua/foo.lua` | 3.0 ± 0.2 | 2.6 | 4.8 | 1.45 ± 0.18 |
+| `go/foo` | 3.7 ± 0.3 | 3.2 | 6.1 | 1.82 ± 0.23 |
+| `fortran/foo` | 3.9 ± 0.3 | 3.4 | 6.0 | 1.88 ± 0.22 |
+| `ocaml/foo` | 4.5 ± 0.7 | 3.7 | 11.6 | 2.18 ± 0.41 |
+| `bash bash/foo` | 4.5 ± 0.3 | 4.0 | 6.3 | 2.19 ± 0.25 |
+| `zsh zsh/foo` | 6.6 ± 0.3 | 5.9 | 8.6 | 3.20 ± 0.34 |
+| `cobol/foo` | 7.2 ± 0.4 | 6.5 | 10.1 | 3.50 ± 0.38 |
+| `nvim -l lua/foo.lua` | 13.8 ± 2.0 | 12.5 | 40.2 | 6.74 ± 1.16 |
+| `haskell/foo` | 19.4 ± 2.0 | 15.3 | 24.7 | 9.44 ± 1.32 |
+| `guile guile/foo.scm` | 19.4 ± 1.0 | 17.8 | 23.4 | 9.44 ± 1.00 |
+| `ocaml ocaml/foo.ml` | 28.2 ± 0.9 | 26.2 | 31.1 | 13.74 ± 1.34 |
+| `emacs --batch --script elisp/foo.el` | 31.9 ± 1.1 | 30.2 | 35.0 | 15.55 ± 1.52 |
+| `python3 python/foo.py` | 37.5 ± 1.2 | 34.9 | 40.2 | 18.25 ± 1.78 |
+| `nu nushell/foo.nu` | 48.8 ± 1.2 | 45.6 | 51.7 | 23.77 ± 2.27 |
+| `dotnet csharp/bin/Debug/net8.0/csharp.dll` | 52.6 ± 1.5 | 49.7 | 57.4 | 25.64 ± 2.48 |
+| `node nodejs/foo.js` | 55.0 ± 1.7 | 52.4 | 59.8 | 26.81 ± 2.61 |
+| `dotnet fsharp/bin/Debug/net8.0/fsharp.dll` | 65.7 ± 1.6 | 62.4 | 70.3 | 32.01 ± 3.05 |
+| `ruby ruby/foo.rb` | 66.2 ± 2.5 | 63.7 | 77.2 | 32.25 ± 3.22 |
+| `java -cp java/ Foo` | 69.6 ± 2.0 | 66.7 | 75.6 | 33.93 ± 3.28 |
+| `escript erlang/foo.erl` | 158.2 ± 2.3 | 154.7 | 162.7 | 77.07 ± 7.19 |
+| `swift swift/foo.swift` | 176.8 ± 5.3 | 171.1 | 193.4 | 86.12 ± 8.36 |
+| `kotlin -cp kotlin/ FooKt` | 234.6 ± 3.0 | 229.9 | 240.6 | 114.30 ± 10.64 |
+| `go run go/foo.go` | 327.6 ± 19.4 | 307.5 | 362.5 | 159.56 ± 17.49 |
+| `java java/Foo.java` | 520.5 ± 4.7 | 515.2 | 528.2 | 253.56 ± 23.50 |
+| `clojure -M clojure/foo.clj` | 763.1 ± 7.8 | 748.3 | 774.9 | 371.71 ± 34.49 |
+| `kotlin kotlin/Foo.main.kts` | 1380.8 ± 28.7 | 1352.5 | 1458.3 | 672.61 ± 63.59 |
+| `dotnet fsi fsharpx/Foo.fsx` | 1384.9 ± 19.8 | 1368.6 | 1433.6 | 674.58 ± 62.95 |
 
 Running
 -------
@@ -69,6 +71,7 @@ Ensure you have the dependencies installed and available on your `PATH`:
   - `dotnet`
   - `g++`
   - `gcc`
+  - `gfortran`
   - `ghc`
   - `go`
   - `javac`

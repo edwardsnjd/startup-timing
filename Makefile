@@ -13,6 +13,7 @@ build:
 	(cd cobol/ ; cobc -x foo.cb )
 	(cd cpp/ ; g++ -o foo foo.cpp )
 	(cd csharp/ ; dotnet build )
+	(cd fortran/ ; gfortran -o foo foo.f90 )
 	(cd fsharp/ ; dotnet build )
 	(cd go/ ; go build foo.go )
 	(cd haskell/ ; ghc foo.hs )
@@ -44,6 +45,7 @@ summary.md:
 		"dotnet fsi fsharpx/Foo.fsx" \
 		"emacs --batch --script elisp/foo.el" \
 		"escript erlang/foo.erl" \
+		"fortran/foo" \
 		"go run go/foo.go" \
 		"go/foo" \
 		"guile guile/foo.scm" \
