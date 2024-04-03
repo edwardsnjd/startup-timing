@@ -12,38 +12,39 @@ Results
 
 | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:---|---:|---:|---:|---:|
-| `c/foo` | 2.1 ± 0.3 | 1.8 | 9.4 | 1.00 |
-| `cpp/foo` | 2.3 ± 0.3 | 1.9 | 5.3 | 1.07 ± 0.21 |
-| `swift/foo` | 2.5 ± 0.3 | 2.1 | 4.7 | 1.17 ± 0.23 |
-| `rust/foo` | 2.6 ± 0.3 | 2.2 | 5.9 | 1.24 ± 0.25 |
-| `lua lua/foo.lua` | 3.7 ± 1.5 | 2.6 | 17.3 | 1.72 ± 0.74 |
-| `go/foo` | 3.7 ± 0.3 | 3.2 | 6.3 | 1.74 ± 0.31 |
-| `fortran/foo` | 4.0 ± 0.5 | 3.4 | 11.5 | 1.88 ± 0.37 |
-| `ocaml/foo` | 4.3 ± 0.3 | 3.7 | 5.8 | 2.03 ± 0.35 |
-| `bash bash/foo` | 4.7 ± 0.8 | 4.0 | 16.5 | 2.21 ± 0.50 |
-| `perl perl/foo.pl` | 5.5 ± 1.6 | 4.6 | 42.1 | 2.59 ± 0.86 |
-| `zsh zsh/foo` | 6.9 ± 0.9 | 6.1 | 19.6 | 3.24 ± 0.67 |
-| `cobol/foo` | 7.7 ± 1.0 | 6.7 | 20.2 | 3.61 ± 0.73 |
-| `nvim -l lua/foo.lua` | 14.0 ± 1.0 | 12.7 | 19.1 | 6.57 ± 1.13 |
-| `haskell/foo` | 18.5 ± 1.5 | 15.8 | 23.0 | 8.68 ± 1.53 |
-| `guile guile/foo.scm` | 21.0 ± 1.9 | 18.6 | 30.2 | 9.83 ± 1.76 |
-| `ocaml ocaml/foo.ml` | 29.3 ± 1.3 | 27.5 | 38.1 | 13.75 ± 2.22 |
-| `emacs --batch --script elisp/foo.el` | 32.4 ± 1.2 | 30.1 | 36.9 | 15.21 ± 2.43 |
-| `python3 python/foo.py` | 39.7 ± 2.2 | 36.2 | 51.1 | 18.61 ± 3.08 |
-| `nu nushell/foo.nu` | 51.3 ± 2.4 | 47.4 | 57.1 | 24.05 ± 3.90 |
-| `dotnet csharp/bin/Debug/net8.0/csharp.dll` | 53.5 ± 1.9 | 50.4 | 58.9 | 25.07 ± 4.00 |
-| `node nodejs/foo.js` | 61.0 ± 5.0 | 54.4 | 85.2 | 28.59 ± 5.04 |
-| `dotnet fsharp/bin/Debug/net8.0/fsharp.dll` | 67.8 ± 2.4 | 63.9 | 77.8 | 31.81 ± 5.07 |
-| `ruby ruby/foo.rb` | 69.9 ± 2.9 | 65.4 | 80.7 | 32.77 ± 5.28 |
-| `java -cp java/ Foo` | 71.2 ± 3.8 | 66.9 | 92.6 | 33.39 ± 5.50 |
-| `escript erlang/foo.erl` | 161.0 ± 6.0 | 156.4 | 183.7 | 75.53 ± 12.08 |
-| `swift swift/foo.swift` | 181.4 ± 2.3 | 177.5 | 185.2 | 85.06 ± 13.27 |
-| `kotlin -cp kotlin/ FooKt` | 241.5 ± 5.5 | 235.4 | 253.2 | 113.24 ± 17.80 |
-| `go run go/foo.go` | 315.4 ± 4.2 | 310.0 | 320.6 | 147.94 ± 23.09 |
-| `java java/Foo.java` | 548.8 ± 25.5 | 523.8 | 602.3 | 257.41 ± 41.78 |
-| `clojure -M clojure/foo.clj` | 789.7 ± 29.2 | 758.1 | 839.1 | 370.37 ± 59.21 |
-| `dotnet fsi fsharpx/Foo.fsx` | 1417.7 ± 24.1 | 1380.4 | 1448.7 | 664.92 ± 104.03 |
-| `kotlin kotlin/Foo.main.kts` | 1458.9 ± 50.9 | 1393.8 | 1519.6 | 684.26 ± 109.07 |
+| `c/foo` | 2.1 ± 0.2 | 1.8 | 4.1 | 1.00 |
+| `cpp/foo` | 2.2 ± 0.3 | 1.9 | 5.3 | 1.06 ± 0.17 |
+| `swift/foo` | 2.4 ± 0.2 | 2.0 | 4.8 | 1.13 ± 0.17 |
+| `rust/foo` | 2.6 ± 0.9 | 2.2 | 26.1 | 1.24 ± 0.44 |
+| `lua lua/foo.lua` | 3.1 ± 0.4 | 2.6 | 10.3 | 1.48 ± 0.25 |
+| `go/foo` | 3.7 ± 0.4 | 3.2 | 6.8 | 1.77 ± 0.28 |
+| `fortran/foo` | 4.0 ± 0.4 | 3.4 | 7.0 | 1.89 ± 0.29 |
+| `ocaml/foo` | 4.4 ± 1.1 | 3.7 | 27.6 | 2.11 ± 0.59 |
+| `bash bash/foo` | 4.6 ± 0.9 | 3.9 | 20.9 | 2.20 ± 0.49 |
+| `perl perl/foo.pl` | 5.3 ± 0.5 | 4.6 | 9.0 | 2.51 ± 0.36 |
+| `zsh zsh/foo` | 6.7 ± 0.5 | 5.9 | 9.8 | 3.18 ± 0.42 |
+| `cobol/foo` | 7.4 ± 0.6 | 6.6 | 16.6 | 3.54 ± 0.49 |
+| `nvim -l lua/foo.lua` | 13.8 ± 0.9 | 12.4 | 19.1 | 6.59 ± 0.85 |
+| `haskell/foo` | 19.0 ± 2.1 | 14.6 | 32.2 | 9.04 ± 1.40 |
+| `guile guile/foo.scm` | 19.9 ± 1.1 | 18.0 | 24.9 | 9.48 ± 1.16 |
+| `ocaml ocaml/foo.ml` | 28.5 ± 1.0 | 26.5 | 32.7 | 13.57 ± 1.58 |
+| `emacs --batch --script elisp/foo.el` | 32.1 ± 1.3 | 30.1 | 35.7 | 15.30 ± 1.79 |
+| `python3 python/foo.py` | 39.4 ± 2.0 | 36.7 | 47.0 | 18.79 ± 2.29 |
+| `deno run deno/foo.js` | 39.7 ± 2.6 | 36.9 | 57.2 | 18.91 ± 2.43 |
+| `nu nushell/foo.nu` | 50.0 ± 1.6 | 46.7 | 57.2 | 23.81 ± 2.73 |
+| `dotnet csharp/bin/Debug/net8.0/csharp.dll` | 53.8 ± 2.6 | 50.9 | 66.0 | 25.61 ± 3.09 |
+| `node nodejs/foo.js` | 56.1 ± 1.3 | 52.6 | 58.8 | 26.71 ± 3.01 |
+| `ruby ruby/foo.rb` | 67.4 ± 1.9 | 63.9 | 73.3 | 32.13 ± 3.66 |
+| `dotnet fsharp/bin/Debug/net8.0/fsharp.dll` | 68.5 ± 2.9 | 65.2 | 78.5 | 32.66 ± 3.86 |
+| `java -cp java/ Foo` | 70.0 ± 1.7 | 66.9 | 74.7 | 33.34 ± 3.77 |
+| `escript erlang/foo.erl` | 160.0 ± 2.0 | 157.1 | 164.6 | 76.21 ± 8.46 |
+| `swift swift/foo.swift` | 173.2 ± 2.1 | 170.1 | 176.8 | 82.51 ± 9.16 |
+| `kotlin -cp kotlin/ FooKt` | 235.1 ± 2.6 | 229.9 | 238.5 | 112.00 ± 12.42 |
+| `go run go/foo.go` | 346.8 ± 42.6 | 309.4 | 422.1 | 165.23 ± 27.28 |
+| `java java/Foo.java` | 545.6 ± 11.2 | 532.0 | 567.3 | 259.95 ± 29.17 |
+| `clojure -M clojure/foo.clj` | 815.0 ± 6.9 | 802.8 | 824.8 | 388.28 ± 42.96 |
+| `dotnet fsi fsharpx/Foo.fsx` | 1429.8 ± 25.1 | 1397.3 | 1465.5 | 681.22 ± 76.10 |
+| `kotlin kotlin/Foo.main.kts` | 1432.8 ± 30.0 | 1396.6 | 1500.9 | 682.67 ± 76.66 |
 
 Running
 -------
@@ -56,6 +57,7 @@ Ensure you have the dependencies installed and available on your `PATH`:
 - Shells
     - `bash`, `zsh`, and `nu` (nushell)
 - Interpreters
+  - `deno`
   - `emacs`
   - `escript`
   - `go`

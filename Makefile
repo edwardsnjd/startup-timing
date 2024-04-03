@@ -40,6 +40,7 @@ summary.md:
 		"clojure -M clojure/foo.clj" \
 		"cobol/foo" \
 		"cpp/foo" \
+		"deno run deno/foo.js" \
 		"dotnet csharp/bin/Debug/net8.0/csharp.dll" \
 		"dotnet fsharp/bin/Debug/net8.0/fsharp.dll" \
 		"dotnet fsi fsharpx/Foo.fsx" \
