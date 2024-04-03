@@ -9,6 +9,7 @@ clean:
 
 .PHONY: build
 build:
+	(cd assembly-x86/ ; as -o foo.o foo.s ; gcc -o foo -nostdlib -static foo.o )
 	(cd c/ ; gcc -o foo foo.c )
 	(cd cobol/ ; cobc -x foo.cb )
 	(cd cpp/ ; g++ -o foo foo.cpp )
@@ -35,6 +36,8 @@ summary.md:
 		--shell=none \
 		--export-markdown="summary.md" \
 		--sort="mean-time" \
+		--time-unit="millisecond" \
+		"assembly-x86/foo" \
 		"bash bash/foo" \
 		"c/foo" \
 		"clojure -M clojure/foo.clj" \

@@ -1,7 +1,13 @@
+assembly-x86/foo
+assembly-x86/foo.o
 c/foo
 cobol/foo
 cpp/foo
+csharp/bin
+csharp/obj
 fortran/foo
+fsharp/bin
+fsharp/obj
 go/foo
 haskell/foo
 haskell/foo.hi
@@ -14,7 +20,3 @@ ocaml/foo.cmi
 ocaml/foo.cmo
 rust/foo
 swift/foo
-fsharp/obj
-fsharp/bin
-csharp/bin
-csharp/obj
